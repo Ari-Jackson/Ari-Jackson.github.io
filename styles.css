@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Nanum+Gothic+Coding&family=Poppins:wght@300&display=swap');
+/* 
+font-family: 'Cutive Mono', monospace;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Poppins', sans-serif;
+ */
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Cutive Mono', monospace;
+
+    background-color: #474A48;
+    color: whitesmoke;
+
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    height: 10vh;
+    font-family: 'Nanum Gothic Coding', monospace;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    background-color: #474A48;
+    color: rgb(238, 239, 240);
+    
+}
+
+header .logo{
+    padding: 15px;
+
+}
+
+header ul{
+    float: right;
+    padding: 10px 10px 0px 0px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px 10px 30px;
+    color: white;
+    font-size: 3vh;
+}
+
+
+nav{
+    width: 100%;
+}
+
+.logo a{
+    transition: color .3s;
+    transition-timing-function: ease;
+}
+
+.logo a:hover{
+    color:gold;
+}
+
+header ul a{
+    transition: .5s ease-out;
+}
+
+header ul a:hover{
+    text-decoration: none;
+    border-bottom: gold 0.125em solid;
+}
+
+nav div{
+    font-weight:100;
+    font-size: 9vh;
+    width: 10%;
+    display:inline;
+}
+
+main{
+    grid-row: 2;
+    margin-top: 10vh;
+}
+
+h1{
+    font-size:10vh ;
+}
+
+.banner{
+    text-align: left;
+    padding: 15% 25px;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.name{
+    color: gold;
+    font-size: 10vh;
+}
+
+.cursor{
+    width: 1px;
+    background-color: #ccc;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 0.1rem;
+    animation: blink 0.75s infinite;
+}
+
+@keyframes blink{
+    0% {background-color: #ccc;}
+    49% {background-color: #ccc;}
+    50% {background-color: transparent;}
+    99%{background-color: transparent;}
+    100% {background-color: #ccc;}
+}
+
+.cursor.typing{
+    animation: none;
+}
+
+.inline-intro{
+    display: inline;
+}
+
+.about-me{
+    border: solid gold 5px;
+    padding: 2% 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+}
+
+.about-me h2{
+    font-size: 8vh;
+    padding-bottom: 10px;
+
+}
+
+.about-me p{
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.about-me .constructor{
+    background-color: aquamarine;
+    border: blueviolet;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: auto 1fr;
+}
+
+footer{
+    grid-row: 3;
+    text-align:center;
+    background-color: aliceblue;
+    color:rgba(0, 0, 0, 0.574);
+}
+
+footer a{
+    
+}
